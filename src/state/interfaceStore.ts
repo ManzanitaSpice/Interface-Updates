@@ -19,7 +19,7 @@ interface InterfaceState {
 export const useInterfaceStore = create<InterfaceState>((set) => ({
   page: 'home',
   setPage: (page) => set({ page }),
-  cameraZoomOffset: 0,
+  cameraZoomOffset: -0.25,
   adjustCameraZoom: (delta) => set((state) => ({
     cameraZoomOffset: Math.max(-1.5, Math.min(2.5, state.cameraZoomOffset + delta)),
   })),
