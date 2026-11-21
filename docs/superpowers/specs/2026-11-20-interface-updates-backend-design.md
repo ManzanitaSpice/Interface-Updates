@@ -57,4 +57,4 @@ An independent builder review asked for the Pages repository and public feed URL
 
 ## Approval boundary
 
-This document describes the approved backend architecture plus the requested minimal page draft. Backend code, workflow files, and the GitHub remote repository have not been created. The local workspace is prepared for this dedicated project.
+This document defines the approved backend architecture plus the requested minimal page draft. The final visual design remains out of scope and will be handled later.
