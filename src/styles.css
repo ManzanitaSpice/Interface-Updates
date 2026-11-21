@@ -171,7 +171,7 @@ input:focus-visible {
     linear-gradient(145deg, #100b1b 0%, #080711 68%, #10091a 100%);
   box-shadow: inset 0 0 45px rgba(122, 69, 220, 0.13), inset 0 0 2px rgba(235, 215, 255, 0.22);
   font-family: 'VT323', 'Lucida Console', 'Courier New', monospace;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.48;
   text-shadow: 0 0 1px rgba(199, 165, 255, 0.18);
   pointer-events: auto;
@@ -225,21 +225,21 @@ input:focus-visible {
 
 .screen-brand strong {
   color: #f2eefc;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 0.2em;
 }
 
 .screen-brand small {
   margin-top: 4px;
   color: #83809e;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.2em;
 }
 
 .channel-label,
 .screen-version {
   color: #b6acd4;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.12em;
 }
 
@@ -293,7 +293,7 @@ input:focus-visible {
   color: #aaa7c0;
   background: transparent;
   text-align: left;
-  font-size: 13px;
+  font-size: 14px;
   cursor: pointer;
   transition: color 160ms ease, border-color 160ms ease, background 160ms ease;
 }
@@ -311,7 +311,7 @@ input:focus-visible {
 
 .nav-number {
   color: #77718e;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .nav-item--active .nav-number,
@@ -344,7 +344,7 @@ input:focus-visible {
 .meta-label {
   display: inline-block;
   color: #aaa0c9;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.5;
   letter-spacing: 0.17em;
   text-transform: uppercase;
@@ -374,7 +374,7 @@ input:focus-visible {
   max-width: 510px;
   margin: 0;
   color: #aaa8c2;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .primary-action {
@@ -388,7 +388,7 @@ input:focus-visible {
   border-radius: 3px;
   color: #efe7ff;
   background: linear-gradient(100deg, rgba(124, 73, 214, 0.35), rgba(53, 66, 149, 0.16));
-  font-size: 12px;
+  font-size: 13px;
   cursor: pointer;
   text-decoration: none;
   transition: background 160ms ease, box-shadow 160ms ease;
@@ -425,12 +425,12 @@ input:focus-visible {
 .latest-release > span:not(.meta-label),
 .latest-release time {
   color: #a7a4bf;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .system-message {
   color: #a5a1ba;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .system-message--error {
@@ -443,7 +443,7 @@ input:focus-visible {
 
 .skin-form > label {
   color: #dad5eb;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .skin-input-row {
@@ -468,7 +468,7 @@ input:focus-visible {
   outline: 0;
   color: #f0ecff;
   background: transparent;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .skin-input-row input::placeholder {
@@ -495,7 +495,7 @@ input:focus-visible {
   min-height: 16px;
   margin: 0;
   color: #85829b;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .skin-status--ready { color: #a9c9d9; }
@@ -504,7 +504,7 @@ input:focus-visible {
 
 .skin-credit {
   color: #7e7897;
-  font-size: 9px;
+  font-size: 10px;
   text-decoration: none;
 }
 
@@ -534,7 +534,7 @@ input:focus-visible {
 }
 
 .page-heading > p {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .release-entry {
@@ -547,7 +547,7 @@ input:focus-visible {
   gap: 8px;
   margin: 0;
   color: #9390aa;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .meta-dot {
@@ -558,20 +558,20 @@ input:focus-visible {
   padding: 2px 6px;
   border: 1px solid rgba(240, 113, 186, 0.28);
   color: #efa0ca;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .release-entry h3,
 .roadmap-item h3 {
   margin: 6px 0;
   color: #e7e1f4;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
 }
 
 .release-notes {
   color: #a9a6be;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
@@ -611,13 +611,13 @@ input:focus-visible {
 
 .download-version strong {
   color: #d8c5ff;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
 }
 
 .download-version time {
   color: #87839e;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .download-group ul,
@@ -650,7 +650,7 @@ input:focus-visible {
   max-width: 100%;
   overflow: hidden;
   color: #d5d1e4;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 400;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -658,7 +658,7 @@ input:focus-visible {
 
 .file-detail small {
   color: #858199;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .roadmap-empty {
@@ -674,7 +674,7 @@ input:focus-visible {
 }
 
 .roadmap-empty > p {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .roadmap-item {
@@ -687,7 +687,7 @@ input:focus-visible {
   padding: 2px 7px;
   color: #c6b0ff;
   background: rgba(130, 86, 211, 0.17);
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -698,7 +698,7 @@ input:focus-visible {
 .roadmap-item p,
 .roadmap-item time {
   color: #9d99b2;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .screen-footer {
@@ -706,7 +706,7 @@ input:focus-visible {
   flex: 0 0 22px;
   border-top: 1px solid var(--screen-line);
   color: #77738e;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.03em;
 }
 
@@ -778,7 +778,7 @@ input:focus-visible {
     radial-gradient(ellipse at 90% 2%, rgba(91, 56, 153, 0.17), transparent 34%),
     linear-gradient(180deg, #0c0b14 0%, #08070d 60%, #07060b 100%);
   box-shadow: none;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -793,11 +793,11 @@ input:focus-visible {
 }
 
 .tv-interface--mobile .screen-brand strong {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .tv-interface--mobile .screen-brand small {
-  font-size: 8px;
+  font-size: 9px;
 }
 
 .tv-interface--mobile .screen-layout {
@@ -831,7 +831,7 @@ input:focus-visible {
   justify-content: center;
   gap: 6px;
   padding: 6px 8px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .tv-interface--mobile .nav-number,
@@ -868,12 +868,12 @@ input:focus-visible {
 .tv-interface--mobile .hero-copy > p,
 .tv-interface--mobile .page-heading > p,
 .tv-interface--mobile .roadmap-empty > p {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .tv-interface--mobile .primary-action {
   min-height: 42px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .tv-interface--mobile .home-lower {
@@ -896,7 +896,7 @@ input:focus-visible {
 
 .tv-interface--mobile .latest-release > span:not(.meta-label),
 .tv-interface--mobile .latest-release time {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .tv-interface--mobile .scroll-view {
@@ -919,11 +919,11 @@ input:focus-visible {
 
 .tv-interface--mobile .release-entry h3,
 .tv-interface--mobile .roadmap-item h3 {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .tv-interface--mobile .release-notes {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .tv-interface--mobile .download-group li {
@@ -938,7 +938,7 @@ input:focus-visible {
   margin-top: auto;
   padding-top: 7px;
   background: #08070d;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .tv-interface--mobile .scanline-overlay {
@@ -1095,7 +1095,7 @@ input:focus-visible {
   gap: 14px;
   margin-top: 16px;
   color: #a99a7c;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.12em;
 }
 
@@ -1153,7 +1153,7 @@ input:focus-visible {
   border-left-color: rgba(221, 177, 101, 0.24);
   color: #f0d79e;
   background: rgba(180, 117, 42, 0.18);
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
 }
 
