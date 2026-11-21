@@ -36,7 +36,7 @@ En escritorio, el jugador usa la geometría de proporciones Minecraft de `skinvi
 
 ## Publicación
 
-GitHub Actions genera el feed, compila Vite y publica GitHub Pages al subir cambios a `main`, cada cinco minutos y al ejecutar manualmente **Publish updates site** en **Actions**. El repositorio de publicación es `ManzanitaSpice/Interface-Updates`.
+GitHub Actions compila y publica GitHub Pages al subir cambios a `main`; actualiza el feed, compila y publica cada cinco minutos y al ejecutar manualmente **Publish updates site** en **Actions**. Los despliegues por push usan el feed guardado en `public/data/releases.json`. El repositorio de publicación es `ManzanitaSpice/Interface-Updates`.
 
 Antes del primer despliegue, configura **Settings → Pages → Build and deployment → Source → GitHub Actions**. El feed publicado queda en:
 
