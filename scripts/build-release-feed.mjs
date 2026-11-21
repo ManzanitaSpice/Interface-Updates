@@ -34,14 +34,19 @@ function normalizeAsset(asset, releaseTag) {
 
   const name = requireString(asset.name, 'asset name', releaseTag)
   const downloadUrl = requireHttpsUrl(asset.browser_download_url, `download URL for ${name}`, releaseTag)
+  if (!Number.isSafeInteger(asset.size) || asset.size < 0) {
+    throw new Error(`Release ${releaseTag} contains an invalid byte size for ${name}.`)
+  }
+  const contentType = requireString(asset.content_type, `content type for ${name}`, releaseTag)
+  if (asset.digest !== undefined && asset.digest !== null && typeof asset.digest !== 'string') {
+    throw new Error(`Release ${releaseTag} contains an invalid digest for ${name}.`)
+  }
 
   return {
     name,
     downloadUrl,
-    sizeBytes: Number.isSafeInteger(asset.size) && asset.size >= 0 ? asset.size : 0,
-    contentType: typeof asset.content_type === 'string' && asset.content_type.trim()
-      ? asset.content_type
-      : 'application/octet-stream',
+    sizeBytes: asset.size,
+    contentType,
     ...(typeof asset.digest === 'string' && asset.digest.trim() ? { digest: asset.digest } : {}),
   }
 }
@@ -55,6 +60,12 @@ function normalizeRelease(release) {
   if (release.draft === true || !release.published_at) return null
   if (release.draft !== false || typeof release.prerelease !== 'boolean') {
     throw new Error(`Release ${tag} has invalid publication metadata.`)
+  }
+  if (release.name !== undefined && release.name !== null && typeof release.name !== 'string') {
+    throw new Error(`Release ${tag} has an invalid title.`)
+  }
+  if (release.body !== undefined && release.body !== null && typeof release.body !== 'string') {
+    throw new Error(`Release ${tag} has invalid release notes.`)
   }
 
   const publishedAt = requireString(release.published_at, 'publication date', tag)

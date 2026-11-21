@@ -83,7 +83,8 @@ These conditions need code review because they can break the public feed or page
 ## Publication after code review
 
 - [ ] Confirm `ManzanitaSpice/Interface-Updates` is unused before creating it; if it already exists, do not overwrite it.
-- [ ] Create the new public repository, merge the reviewed branch into `main`, set the repository as `origin`, and push the source.
+- [ ] Create the new public repository, then configure **Settings → Pages → Build and deployment → Source → GitHub Actions**.
+- [ ] Merge the reviewed branch into `main`, set the repository as `origin`, and push the source.
 - [ ] Let the push-triggered workflow publish the initial site and JSON feed.
 
 ## Execution Notes
