@@ -1,8 +1,46 @@
 {
   "schemaVersion": 1,
   "sourceRepository": "ManzanitaSpice/Interface-2",
-  "generatedAt": "2026-11-21T03:57:56.491Z",
+  "generatedAt": "2026-11-21T23:31:43.504Z",
   "releases": [
+    {
+      "version": "v1.3.3",
+      "title": "v1.3.3",
+      "publishedAt": "2026-11-21T23:20:58Z",
+      "releaseUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/tag/v1.3.3",
+      "notesMarkdown": "# v1.3.3\r\n\r\nMejoras para servidores locales e instancias\r\n\r\n## Cambios\r\n\r\n- Novedad: exporta servidores locales con mods a una instancia cliente con diagnóstico, selección de archivos y mundos opcionales.\r\n- Novedad: administra Mods y Plugins locales desde un inventario con búsqueda y acciones por archivo.\r\n- Mejora: presenta resultados del catálogo con fallos detallados y confirmación para reintentar descargas recuperables.\r\n- Seguridad: valida rutas, enlaces simbólicos y cambios en los archivos seleccionados antes de copiarlos.\r\n- Corrección: reconoce correctamente los runtimes Quilt, Forge y NeoForge en servidores locales.\r\n- Interfaz: mejora la revisión del catálogo e importación y reemplaza el botón de Discord por un acceso web a las actualizaciones.\r\n",
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "INTERFACE_1.3.3_x64-setup.exe",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.3/INTERFACE_1.3.3_x64-setup.exe",
+          "sizeBytes": 37097600,
+          "contentType": "application/x-msdos-program",
+          "digest": "sha256:2a72324ca809930dd1a5556194ea383cb37e0f587d5e193f85cc7244efb100ca"
+        },
+        {
+          "name": "INTERFACE_1.3.3_x64-setup.exe.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.3/INTERFACE_1.3.3_x64-setup.exe.sig",
+          "sizeBytes": 420,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:33977cc5b64f929c0f7eec2aab835e2f4580a541543ae829391a622c551ba316"
+        },
+        {
+          "name": "INTERFACE_v1.3.3_windows-x86_64.nsis.zip",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.3/INTERFACE_v1.3.3_windows-x86_64.nsis.zip",
+          "sizeBytes": 37092167,
+          "contentType": "application/zip",
+          "digest": "sha256:dadaff28de58f93871c6ecf4799e3d1b0056f037a84f4c4c9e2c96d0262144d4"
+        },
+        {
+          "name": "INTERFACE_v1.3.3_windows-x86_64.nsis.zip.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.3/INTERFACE_v1.3.3_windows-x86_64.nsis.zip.sig",
+          "sizeBytes": 436,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:53b8cfc02360de423e4477ebdfc5206707c50746bf1d8c4371aa3a05c771060f"
+        }
+      ]
+    },
     {
       "version": "v1.3.2",
       "title": "v1.3.2",
