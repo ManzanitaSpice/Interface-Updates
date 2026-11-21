@@ -27,20 +27,29 @@ jobs:
       - name: Check out the website repository
         uses: actions/checkout@v7
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.23.0
 
       - name: Set up Node.js
         uses: actions/setup-node@v7
         with:
           node-version: 24
-          package-manager-cache: false
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
 
-      - name: Build the Pages artifact
-        run: |
-          mkdir -p dist
-          cp -R site/. dist/
-          node scripts/build-release-feed.mjs dist/data/releases.json
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Refresh public release data
+        run: pnpm update-feed
+
+      - name: Build the website
+        run: pnpm build
 
       - name: Upload the Pages artifact
         uses: actions/upload-pages-artifact@v4

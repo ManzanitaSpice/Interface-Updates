@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "sourceRepository": "ManzanitaSpice/Interface-2",
+  "generatedAt": "2026-11-21T03:57:56.491Z",
+  "releases": [
+    {
+      "version": "v1.3.2",
+      "title": "v1.3.2",
+      "publishedAt": "2026-11-16T20:11:15Z",
+      "releaseUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/tag/v1.3.2",
+      "notesMarkdown": "# v1.3.2\r\n\r\nActualiza overlays de descargadores\r\n\r\n## Cambios\r\n\r\n- Fuerza fondos opacos en selección y revisión\r\n- Cierra el overlay al salir del descargador\r\n",
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "INTERFACE_1.3.2_x64-setup.exe",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.2/INTERFACE_1.3.2_x64-setup.exe",
+          "sizeBytes": 37057404,
+          "contentType": "application/x-msdos-program",
+          "digest": "sha256:236b30bcc831a68d586073073c5ee57b18d9d27d8e8e8170e6ad3c6a4ade9570"
+        },
+        {
+          "name": "INTERFACE_1.3.2_x64-setup.exe.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.2/INTERFACE_1.3.2_x64-setup.exe.sig",
+          "sizeBytes": 420,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:dcdab165090dadc0764fd0d5ce11d36dfe2d51f83a9e05c8de785cf99eea75f3"
+        },
+        {
+          "name": "INTERFACE_v1.3.2_windows-x86_64.nsis.zip",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.2/INTERFACE_v1.3.2_windows-x86_64.nsis.zip",
+          "sizeBytes": 37051959,
+          "contentType": "application/zip",
+          "digest": "sha256:54e2d1b60df382e7d42df75a8f61525b227ee5d7f69e167de6460b417c513ebf"
+        },
+        {
+          "name": "INTERFACE_v1.3.2_windows-x86_64.nsis.zip.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.2/INTERFACE_v1.3.2_windows-x86_64.nsis.zip.sig",
+          "sizeBytes": 436,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:12a6d9d5eb85c9425bddb6efb0efaf92c862e527d476b6cc811cc5dbcf4fcf1b"
+        }
+      ]
+    },
+    {
+      "version": "v1.3.1",
+      "title": "v1.3.1",
+      "publishedAt": "2026-11-16T09:07:09Z",
+      "releaseUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/tag/v1.3.1",
+      "notesMarkdown": "# v1.3.1\r\n\r\nActualización de Interface\r\n\r\n## Cambios\r\n\r\n- Mejoras de seguridad, importación, mecánicas y perfiles\r\n- Gestión de servidores locales, catálogos y acceso remoto\r\n- Explorador MEGA y edición global de archivos\r\n",
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "INTERFACE_1.3.1_x64-setup.exe",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.1/INTERFACE_1.3.1_x64-setup.exe",
+          "sizeBytes": 37053988,
+          "contentType": "application/x-msdos-program",
+          "digest": "sha256:2430d50a0b8d785c575f61d60910f28caea6fd48ce444264eed1bd01a874da19"
+        },
+        {
+          "name": "INTERFACE_1.3.1_x64-setup.exe.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.1/INTERFACE_1.3.1_x64-setup.exe.sig",
+          "sizeBytes": 420,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:b0bc19b78fb526433bb67093f8a058c6f5905d6df663168fa78e877ece45a983"
+        },
+        {
+          "name": "INTERFACE_v1.3.1_windows-x86_64.nsis.zip",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.1/INTERFACE_v1.3.1_windows-x86_64.nsis.zip",
+          "sizeBytes": 37048543,
+          "contentType": "application/zip",
+          "digest": "sha256:392e46233e9e0958177dceeba55cabb43dfe0a53c6fae0124c39a8968d93485e"
+        },
+        {
+          "name": "INTERFACE_v1.3.1_windows-x86_64.nsis.zip.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.1/INTERFACE_v1.3.1_windows-x86_64.nsis.zip.sig",
+          "sizeBytes": 436,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:df931a2da4e6d6d0bfdfd0ca65230afc73dcc36f0fc4f014705f570831b7ee72"
+        }
+      ]
+    },
+    {
+      "version": "v1.3.0",
+      "title": "v1.3.0",
+      "publishedAt": "2026-11-12T20:36:31Z",
+      "releaseUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/tag/v1.3.0",
+      "notesMarkdown": "# v1.3.0\r\n\r\nGran actualización de Interface\r\n\r\n## Cambios\r\n\r\n- Nuevo centro de creación y home editorial\r\n- Editor de instancias con mejoras en mods, archivos y flujos de importación/exportación\r\n- Renovación de skins con previsualización y gestión ampliadas\r\n- Mejoras de rendimiento, seguridad y mecánicas musicales\r\n",
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "INTERFACE_1.3.0_x64-setup.exe",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.0/INTERFACE_1.3.0_x64-setup.exe",
+          "sizeBytes": 36750238,
+          "contentType": "application/x-msdos-program",
+          "digest": "sha256:ed54b9a80281d24ea8dea72a024cada699ea8e96c42e7c88bc9a9201a6809726"
+        },
+        {
+          "name": "INTERFACE_1.3.0_x64-setup.exe.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.0/INTERFACE_1.3.0_x64-setup.exe.sig",
+          "sizeBytes": 420,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:cd454f5b7d7a2bd3afbce5da7cef771edfeee41bd4f54e866398aa711b0550fd"
+        },
+        {
+          "name": "INTERFACE_v1.3.0_windows-x86_64.nsis.zip",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.0/INTERFACE_v1.3.0_windows-x86_64.nsis.zip",
+          "sizeBytes": 36744696,
+          "contentType": "application/zip",
+          "digest": "sha256:ce2ec0801d131dff8190b9e0406ae7b62c718a86d37d59439f7ef9c478e76f8b"
+        },
+        {
+          "name": "INTERFACE_v1.3.0_windows-x86_64.nsis.zip.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.3.0/INTERFACE_v1.3.0_windows-x86_64.nsis.zip.sig",
+          "sizeBytes": 436,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:9ee51b32e10d5eeb05397db591ebce7605e78e2033b57aaeedfb034b4fd674c5"
+        }
+      ]
+    },
+    {
+      "version": "v1.1.46",
+      "title": "v1.1.46",
+      "publishedAt": "2026-10-21T21:44:56Z",
+      "releaseUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/tag/v1.1.46",
+      "notesMarkdown": "# v1.1.46\r\n\r\nUpdateFixes5\r\n\r\n## Cambios\r\n\r\n- UpdateFixes5\r\n",
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "INTERFACE_1.1.46_x64-setup.exe",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.46/INTERFACE_1.1.46_x64-setup.exe",
+          "sizeBytes": 101212726,
+          "contentType": "application/x-msdos-program",
+          "digest": "sha256:5922c571d815a6ae0c9452495c5f69fe713c24c775bc06127a443ad629048abe"
+        },
+        {
+          "name": "INTERFACE_1.1.46_x64-setup.exe.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.46/INTERFACE_1.1.46_x64-setup.exe.sig",
+          "sizeBytes": 420,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:9dafc92e0225512ffdd5537eaa7891fb18bac9768c7f50ee5a97769522a1d49f"
+        },
+        {
+          "name": "INTERFACE_v1.1.46_windows-x86_64.nsis.zip",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.46/INTERFACE_v1.1.46_windows-x86_64.nsis.zip",
+          "sizeBytes": 101226854,
+          "contentType": "application/zip",
+          "digest": "sha256:85256641e4d86ac14fd12a6133553a91bf05a0afefd4e3fb459e586cbddbbf94"
+        },
+        {
+          "name": "INTERFACE_v1.1.46_windows-x86_64.nsis.zip.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.46/INTERFACE_v1.1.46_windows-x86_64.nsis.zip.sig",
+          "sizeBytes": 436,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:d67b013e7ed75d22ca2f2cfdacadc9d3f8238baea3225fa43bdc54ab8f10bec7"
+        }
+      ]
+    },
+    {
+      "version": "v1.1.45",
+      "title": "v1.1.45",
+      "publishedAt": "2026-10-21T20:27:42Z",
+      "releaseUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/tag/v1.1.45",
+      "notesMarkdown": "# v1.1.45\r\n\r\nUpdateFixes4\r\n\r\n## Cambios\r\n\r\n- UpdateFixes4\r\n",
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "INTERFACE_1.1.45_x64-setup.exe",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.45/INTERFACE_1.1.45_x64-setup.exe",
+          "sizeBytes": 102105566,
+          "contentType": "application/x-msdos-program",
+          "digest": "sha256:5e2ce353b4eab531f7c952fd9a489366602dad52da328d4423ff01f170bcda82"
+        },
+        {
+          "name": "INTERFACE_1.1.45_x64-setup.exe.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.45/INTERFACE_1.1.45_x64-setup.exe.sig",
+          "sizeBytes": 420,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:b72115449f5734f49374e4b18ae0b2f59182c35fbb7775e3318214ec9c4b36ca"
+        },
+        {
+          "name": "INTERFACE_v1.1.45_windows-x86_64.nsis.zip",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.45/INTERFACE_v1.1.45_windows-x86_64.nsis.zip",
+          "sizeBytes": 102119973,
+          "contentType": "application/zip",
+          "digest": "sha256:85b96163204cded788cf0fe4b6f1af3faedd34e517922cb90abb3244e168efc3"
+        },
+        {
+          "name": "INTERFACE_v1.1.45_windows-x86_64.nsis.zip.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.45/INTERFACE_v1.1.45_windows-x86_64.nsis.zip.sig",
+          "sizeBytes": 436,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:4c82e91352627d7d6108104a01133e02459ca621c64bbde6ac2780ac24915961"
+        }
+      ]
+    },
+    {
+      "version": "v1.1.43",
+      "title": "v1.1.43",
+      "publishedAt": "2026-10-17T21:29:46Z",
+      "releaseUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/tag/v1.1.43",
+      "notesMarkdown": "# v1.1.43\r\n\r\nFixPkgHangWorkflow\r\n\r\n## Cambios\r\n\r\n- FixPkgHangWorkflow\r\n",
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "INTERFACE_1.1.43_x64-setup.exe",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.43/INTERFACE_1.1.43_x64-setup.exe",
+          "sizeBytes": 101063524,
+          "contentType": "application/x-msdos-program",
+          "digest": "sha256:9ed7e227d0483f22e993ec392b20444ea4d8c7e6514a4ed19c6b0447a60a6256"
+        },
+        {
+          "name": "INTERFACE_1.1.43_x64-setup.exe.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.43/INTERFACE_1.1.43_x64-setup.exe.sig",
+          "sizeBytes": 420,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:3462eeb5f37a3491e0769ff2ca866f8a5d6257e3f4688ff3bf902b3667e0b8f3"
+        },
+        {
+          "name": "INTERFACE_v1.1.43_windows-x86_64.nsis.zip",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.43/INTERFACE_v1.1.43_windows-x86_64.nsis.zip",
+          "sizeBytes": 101077609,
+          "contentType": "application/zip",
+          "digest": "sha256:2d5e73bfaa6f8335120bd48694a1cd599b9fae98b1de7953541a04ba66c338ba"
+        },
+        {
+          "name": "INTERFACE_v1.1.43_windows-x86_64.nsis.zip.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.43/INTERFACE_v1.1.43_windows-x86_64.nsis.zip.sig",
+          "sizeBytes": 436,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:dbafc9e9ca057dc734181c5bd2528d6cd5a2968c0ead2126506eac27d76aa024"
+        }
+      ]
+    },
+    {
+      "version": "v1.1.40",
+      "title": "v1.1.40",
+      "publishedAt": "2026-10-17T01:06:08Z",
+      "releaseUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/tag/v1.1.40",
+      "notesMarkdown": "# v1.1.40\r\n\r\nUpdateFixes\r\n\r\n## Cambios\r\n\r\n- UpdateFixes\r\n",
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "INTERFACE_1.1.40_x64-setup.exe",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.40/INTERFACE_1.1.40_x64-setup.exe",
+          "sizeBytes": 100985516,
+          "contentType": "application/x-msdos-program",
+          "digest": "sha256:4c03cf8ddced8d75d2982498a0e2131788975eeef6e2c755004ee554e94a97fe"
+        },
+        {
+          "name": "INTERFACE_1.1.40_x64-setup.exe.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.40/INTERFACE_1.1.40_x64-setup.exe.sig",
+          "sizeBytes": 420,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:8456f747ef2b916a9fa59713a199be8dc772f7cab6b25f9d4cf0787723024333"
+        },
+        {
+          "name": "INTERFACE_v1.1.40_windows-x86_64.nsis.zip",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.40/INTERFACE_v1.1.40_windows-x86_64.nsis.zip",
+          "sizeBytes": 100999576,
+          "contentType": "application/zip",
+          "digest": "sha256:b59b95baffac5331bba597301c5721f49923a165ee34c0a962c3d5aecab777bb"
+        },
+        {
+          "name": "INTERFACE_v1.1.40_windows-x86_64.nsis.zip.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.40/INTERFACE_v1.1.40_windows-x86_64.nsis.zip.sig",
+          "sizeBytes": 436,
+          "contentType": "application/pgp-signature",
+          "digest": "sha256:fb8bf91e283a831076723a0be9e3ad122c2edc2236d5a09fe47e12e4bd27735b"
+        }
+      ]
+    },
+    {
+      "version": "v1.1.39",
+      "title": "v1.1.39",
+      "publishedAt": "2026-10-11T17:26:49Z",
+      "releaseUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/tag/v1.1.39",
+      "notesMarkdown": "# v1.1.39\r\n\r\nUpdateMajor, Mascota v3.5Core\r\n\r\n## Cambios\r\n\r\n- UpdateMajor, Mascota v3.5Core\r\n",
+      "prerelease": false,
+      "assets": [
+        {
+          "name": "INTERFACE_1.1.39_x64-setup.exe",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.39/INTERFACE_1.1.39_x64-setup.exe",
+          "sizeBytes": 105884652,
+          "contentType": "application/octet-stream",
+          "digest": "sha256:7c17b7acd09cc29b420093ac7e119c87992d6fc94da1f128d2f0576776230b38"
+        },
+        {
+          "name": "INTERFACE_1.1.39_x64-setup.exe.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.39/INTERFACE_1.1.39_x64-setup.exe.sig",
+          "sizeBytes": 420,
+          "contentType": "application/octet-stream",
+          "digest": "sha256:9a412e25734ee97f9dc23e278cb9f74e0e7fe7fa0895e5af9c371e98a5069e00"
+        },
+        {
+          "name": "INTERFACE_v1.1.39_windows-x86_64.nsis.zip",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.39/INTERFACE_v1.1.39_windows-x86_64.nsis.zip",
+          "sizeBytes": 105900208,
+          "contentType": "application/octet-stream",
+          "digest": "sha256:8b063c0a9a53696f2639e4141ac97bbc91eb7ae819547d81347cf3d551d0d0b3"
+        },
+        {
+          "name": "INTERFACE_v1.1.39_windows-x86_64.nsis.zip.sig",
+          "downloadUrl": "https://github.com/ManzanitaSpice/Interface-2/releases/download/v1.1.39/INTERFACE_v1.1.39_windows-x86_64.nsis.zip.sig",
+          "sizeBytes": 436,
+          "contentType": "application/octet-stream",
+          "digest": "sha256:1606af3024015c65b4ae64cc94f7e2bf3e774c778e9a02d0589e8a3b736e767b"
+        }
+      ]
+    }
+  ]
+}

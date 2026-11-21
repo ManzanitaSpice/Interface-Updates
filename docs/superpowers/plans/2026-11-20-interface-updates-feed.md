@@ -1,94 +1,71 @@
-# Interface updates feed and minimal draft Implementation Plan
+# INTERFACE Updates 3D website implementation plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development or superpowers:executing-plans to implement this plan task-by-task.
+**Goal:** Build an interactive 3D GitHub Pages site for INTERFACE releases, with the actual web interface embedded in a CRT television.
 
-**Goal:** Publish INTERFACE's GitHub Releases as a JSON feed and a plain draft page from a new GitHub Pages repository.
+**Architecture:** Vite builds a React/TypeScript application. React Three Fiber renders the dark desktop scene and detailed Poly Haven CRT; Drei attaches HTML controls to the screen. A bundled CC0 2K PBR GLB preserves the model textures. `skinview3d` renders the real Minecraft skin and body proportions. Phones receive the HTML page without a WebGL context. The app reads normalized release JSON and a maintained roadmap JSON. GitHub Actions generates the release feed and publishes the static build.
 
-**Architecture:** A dependency-free Node.js script reads the public `ManzanitaSpice/Interface-2` releases API and writes a normalized feed into a static Pages artifact. A small HTML/JS page reads that feed and displays versions, notes, and downloadable assets. GitHub Actions builds and deploys the artifact on pushes, hourly, or manual dispatch.
-
-**Tech Stack:** Node.js 24 built-in `fetch`, plain HTML/JavaScript, GitHub REST API, GitHub Actions, GitHub Pages.
+**Stack:** React 19, TypeScript, Vite, pnpm, Three.js, React Three Fiber, Drei, `gltfjsx`, `skinview3d`, GSAP, `@react-three/postprocessing`, Tailwind CSS, Zustand, GitHub Actions, and GitHub Pages.
 
 **Spec:** `docs/superpowers/specs/2026-11-20-interface-updates-backend-design.md`
 
-## Global Constraints
+## Constraints
 
-- Source repository: `ManzanitaSpice/Interface-2`.
-- Include published releases only; exclude drafts and ordinary tags, include published prereleases, exclude individual commits.
-- Preserve release notes as Markdown text and expose uploaded asset download URLs.
-- Read the public source without credentials or secrets.
-- Serve the feed as `data/releases.json` under the project-site path for `ManzanitaSpice/Interface-Updates`.
-- The draft page uses browser-default styling and is not the final visual design.
-- Do not modify `C:\CodigoInterface` or `Interface-2`.
-- Automated tests are outside this request; no test files or test commands are planned.
+- Source repository remains `ManzanitaSpice/Interface-2`; display releases, notes, and downloads only, never individual commits.
+- The approved new public repository name is `ManzanitaSpice/Interface-Updates`.
+- Use the 3D CRT scene and screenshot as a visual reference, while keeping the site's controls functional HTML.
+- Do not change `C:\CodigoInterface` or the source repository.
+- Do not use flat artwork to fake the 3D scene or interactive features.
+- Do not create a WebGL context on mobile; respect reduced motion on desktop.
+- Automated tests were not requested; do not add or run tests.
 
-## Review Focus
+## Review focus
 
-These conditions need code review because they can break the public feed or page:
+- GitHub pagination, malformed data checks, safe release-note rendering, and project-site URL base stay correct.
+- The HTML screen remains pointer- and keyboard-interactive when attached to the 3D scene.
+- Skin lookup errors leave the default avatar intact; dispose viewer resources on unmount.
+- The CC0 PBR GLB loads under the project path without third-party decoder downloads.
+- Reduced-motion and mobile layouts keep the same navigation and release downloads available.
 
-- GitHub pagination beyond the first 100 releases must not silently truncate history.
-- API, rate-limit, malformed-response, and empty-response failures must stop deployment rather than publish a blank feed.
-- Draft releases must stay excluded while public prereleases remain available.
-- Notes must be inserted as text so release Markdown cannot inject HTML into the page.
-- Feed loading from the module URL must work under the project Pages prefix `/Interface-Updates/`.
+## Implementation
 
----
+### 1. Preserve and adapt the release backend
 
-### Task 1: Generate the normalized release feed
+- [x] Generate normalized paginated release JSON from the public source repository.
+- [x] Fail safely on API errors and malformed release or asset metadata.
+- [x] Keep published prereleases; exclude drafts and unpublished releases.
+- [x] Document the Pages feed URL and manual refresh.
+- [ ] Move the feed artifact into Vite's public data directory for local and production use.
 
-**Files:**
-- Create: `scripts/build-release-feed.mjs`
+### 2. Build the React and 3D scene
 
-**Interfaces:**
-- Consumes: `GET https://api.github.com/repos/ManzanitaSpice/Interface-2/releases?per_page=100&page=N`.
-- Produces: a JSON file at the output path argument, defaulting to `dist/data/releases.json`.
-- Output shape: `{ schemaVersion: 1, sourceRepository, generatedAt, releases }`; each release has `version`, `title`, `publishedAt`, `releaseUrl`, `notesMarkdown`, `prerelease`, and `assets`; each asset has `name`, `downloadUrl`, `sizeBytes`, `contentType`, and optional `digest`.
+- [ ] Add Vite, React, and TypeScript project config with `/Interface-Updates/` build base.
+- [x] Bundle the CC0 2K PBR CRT GLB and load it through Drei.
+- [x] Build the near-black floor scene, screen glow, shadows, curved display treatment, grain, scanlines, and bloom.
+- [x] Add the correctly proportioned, seated skin avatar on the left, with its outer layer and cape hidden.
+- [x] Add smooth camera focus on section navigation and reduced-motion handling.
 
-- [x] Create the executable Node.js entry point and accept an optional output path.
-- [x] Fetch all pages with `per_page=100`; require successful HTTP responses and valid release arrays.
-- [x] Exclude drafts and entries without `published_at`, include published prereleases, fall back from a missing release name to its tag, keep only uploaded assets with download URLs, and sort releases newest first.
-- [x] Write the schema-versioned JSON atomically; fail if the result is empty or malformed so deployment cannot replace a working feed with empty data.
+### 3. Make the TV interface functional
 
-### Task 2: Add the plain draft page
+- [ ] Embed an accessible React HTML interface on the TV using Drei `Html` transform.
+- [ ] Implement Inicio, Actualizaciones, Descargas, and Roadmap views with Zustand navigation.
+- [ ] Read releases from JSON, displaying notes and direct download links safely.
+- [ ] Add an editable roadmap JSON file and loading/empty/error states.
+- [ ] Add a username lookup and load the Minecraft skin into `skinview3d` with visible status/errors.
 
-**Files:**
-- Create: `site/index.html`
-- Create: `site/app.js`
+### 4. Responsive and deployment setup
 
-**Interfaces:**
-- Consumes: the Task 1 feed resolved as `new URL('./data/releases.json', import.meta.url)`.
-- Produces: a basic page listing version, publication date, Markdown notes, and uploaded asset links.
-
-- [x] Add a semantic HTML shell with a title, a live status region, and a release list container.
-- [x] Fetch the relative JSON URL and render release fields through DOM text nodes; keep loading, empty, and fetch-error messages visible.
-- [x] Keep browser-default presentation and avoid branding, illustrations, custom cards, or final visual direction.
-
-### Task 3: Deploy from the new GitHub repository
-
-**Files:**
-- Create: `.github/workflows/publish-pages.yml`
-- Create: `README.md`
-- Create: `.gitignore`
-
-**Interfaces:**
-- Consumes: `site/` and `scripts/build-release-feed.mjs` from Tasks 1–2.
-- Produces: a GitHub Pages artifact containing the plain page and `data/releases.json`.
-
-- [x] Configure the workflow for pushes to `main`, an hourly UTC schedule, and `workflow_dispatch`.
-- [x] Grant only `contents: read`, `pages: write`, and `id-token: write`; use `actions/checkout@v7`, `actions/setup-node@v7` with Node 24, `actions/configure-pages@v5`, `actions/upload-pages-artifact@v4`, and `actions/deploy-pages@v4`.
-- [x] Copy the page into `dist/`, generate `dist/data/releases.json`, and deploy only if the feed generator succeeds.
-- [x] Document the source repository, public feed URL, scheduled refresh, and manual refresh in `README.md`.
-- [x] Ignore the generated `dist/` artifact in `.gitignore`.
-- [x] Finish the workflow, README, and generated-output ignore rule locally; leave remote setup for after the whole-branch review.
+- [x] Add CRT scanlines and grain, Tailwind styling, focus visibility, and a mobile HTML page without WebGL.
+- [ ] Update GitHub Actions to install from `pnpm-lock.yaml`, refresh feed JSON, build Vite, and deploy Pages.
+- [ ] Document local run/build, roadmap editing, releases, skin service attribution, and Pages setup.
+- [ ] Remove the obsolete plain HTML draft once the Vite app is in place.
 
 ## Publication after code review
 
-- [ ] Confirm `ManzanitaSpice/Interface-Updates` is unused before creating it; if it already exists, do not overwrite it.
-- [ ] Create the new public repository, then configure **Settings → Pages → Build and deployment → Source → GitHub Actions**.
-- [ ] Merge the reviewed branch into `main`, set the repository as `origin`, and push the source.
-- [ ] Let the push-triggered workflow publish the initial site and JSON feed.
+- [x] Confirm that `ManzanitaSpice/Interface-Updates` is unused; do not overwrite an existing repository.
+- [ ] Create the repository, then set **Settings → Pages → Build and deployment → Source → GitHub Actions**.
+- [ ] Push the completed `main` branch to the new repository.
+- [ ] Confirm the Pages workflow publishes the site and release feed.
 
-## Execution Notes
+## Known external dependency
 
-- Implement natively in the current session; the generator, page, and deployment workflow share one small schema and repository.
-- Do not start the final visual design in this task.
-- The public repository creation and initial deployment are authorized by the request and confirmed repository name.
+Username-based skin lookup uses the documented MCHeads skin endpoint, which resolves usernames and supports CORS. The page should surface a clear error and keep the default avatar when that third-party service is unavailable.
